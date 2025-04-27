@@ -1,0 +1,49 @@
+
+.auteurs-container {
+    display: flex;
+    flex-direction: column; /* Permet d'empiler les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh; /* S'assure que la section occupe toute la hauteur de la page */
+    text-align: center; /* Centrer le texte des titres */
+    font-size: 2em;
+    color: #389898;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+.auteurs h1{
+    display: flex;
+    flex-direction: column; /* Permet d'empiler les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh; /* S'assure que la section occupe toute la hauteur de la page */
+    text-align: center; /* Centrer le texte des titres */
+    font-size: 2em;
+    color: #389898;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+.auteur-item {
+    flex: 1 1 45%;              /* Ajuste la largeur pour éviter que les éléments ne passent en dessous */
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;    
+}
+
+.auteur-item h3 {
+    color: #c0392b;
+    font-size: 1.5em;
+}
+
+.auteur-item p {
+    text-align: justify;
+    color: #444;
+}
+.f{
+    text-align: justify;
+}

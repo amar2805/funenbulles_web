@@ -1,0 +1,234 @@
+
+form {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #fffcf7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Police adaptée à l'univers BD */
+}
+
+/* Conteneur pour chaque question et ses réponses */
+.question-block {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.question-block img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Ajuste la largeur à ta convenance */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+/* Style pour chaque question */
+form p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+input[type="radio"] {
+    visibility: hidden;     /* Cacher les boutons radio */
+    position: absolute;
+}
+
+input[type="radio"] + label {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de style lorsque la réponse est sélectionnée */
+input[type="radio"]:checked + label {
+    background-color: #b77be9;
+    color: white;
+    border: 2px solid #b77be9;
+}
+
+/* Style au survol */
+input[type="radio"] + label:hover {
+    background-color: #b9e2e2;
+}
+
+/* Style du bouton Valider */
+#submit {
+    background-color: #6db0b0;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submit:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+#submit:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#recherche {
+    background-color: #6db0b0;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#recherche:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+#recherche:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ludique h1{
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #389898;
+}
+
+.questions-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colonnes de taille égale */
+    gap: 20px;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+.question-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.question-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.question-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #296f6f;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+.question-body {
+    margin-top: 10px;
+}
+
+.correct-label {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.question-footer {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.questions-container p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.ludiqueResult  {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    margin: 10px 0 20px auto;
+}
+
+.ludiqueResult h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ludiqueResult h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    .score-title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-message {
+    font-size: x-large;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.score-box {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0a0200;
+    padding: 20px 40px;
+    background-color: #bfe2e2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    animation: pop-in 0.5s ease-out forwards;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

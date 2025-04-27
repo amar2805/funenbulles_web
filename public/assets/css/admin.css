@@ -1,0 +1,27 @@
+.admin {
+    display: flex;
+    flex-direction: column; /* Permet d'empiler les éléments verticalement */
+    justify-content: flex-start; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh; /* S'assure que la section occupe toute la hauteur de la page */
+    text-align: center; /* Centrer le texte des titres */
+    margin: 0; /* Supprime les marges */
+    padding: 0;
+}
+
+.admin h1 {
+    font-size:2.5em;
+    color: #389898;
+    margin : 5px auto 0px auto;
+}
+
+.admin h3 {
+    color: red;
+    margin: 0;
+    padding: 0; /* Supprime les espacements internes */
+    line-height: 1;
+}
+
+.admin form button {
+    margin: 10px 5px; /* Gère l'espacement des boutons */
+}

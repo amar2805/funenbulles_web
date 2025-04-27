@@ -1,0 +1,80 @@
+
+.pratique {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 3px;
+    background-color: #fffcf7;
+    border-radius: 10px;                        /* Coins arrondis */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Ombre  */
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+}
+.erreurs {
+    color: #c0392b !important;
+}
+
+
+.pratique h1 {
+    font-size:2.5em;
+    color: #389898;
+    margin : 5px auto 0px auto;
+}
+
+.pratique .erreurs {
+    color: #c0392b;
+    font-weight: bold; /* Optionnel, pour rendre les messages plus visibles */
+    text-align: center; /* Centrer les erreurs (optionnel) */
+}
+
+.section {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 1.8em;
+    color: #c0392b;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1.2em;
+    margin: 8px 0;
+    text-align: center;
+}
+.tarif {
+    background-color: #fff8e7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.jour {
+    background-color: #fff8e7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.jour p {
+    margin: 5px 0;
+    color: #444;
+    text-align: center;
+}
+
+.lieu {
+    background-color: #fff8e7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.lieu p {
+    margin: 5px 0;
+    color: #444;
+    text-align: center;
+}

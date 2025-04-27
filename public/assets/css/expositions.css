@@ -1,0 +1,70 @@
+
+.expositions h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: #389898;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+.expositions p{
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    text-align: justify;
+    font-size: 1em;
+    color: #114f4f;
+    max-width: 1000px;      /* Largeur maxi du bloc */
+    margin: 0 auto;         /* Centre le conteneur sur la page */
+    padding: 10px;
+}
+.expositions-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fffcf7;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+.expositions-container h1{
+    color :#c0392b
+}
+
+.exposition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));     /* taille ajustée */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.exposition-item {
+    position: relative;             /* Positionne le conteneur pour l'effet absolu de l'image */
+    overflow: visible;              /* Permet à l'image de sortir du cadre */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fffcf7;
+    text-align: center;
+}
+
+.exposition-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    position: relative;
+    z-index: 1;         /* niveau de superposition par défaut */
+}
+
+.exposition-item:hover img {
+    width: 140%;                 /* Agrandit  l'image */
+    height: auto;
+    position: absolute;         /* La fait sortir du flux normal */
+    top: -10%;                  /* Positionne l'image légèrement au-dessus du cadre */
+    left: -10%;                 /* Décale à gauche pour garder l'image centrée */
+    z-index: 10;                /* Assure que l'image est au-dessus des autres éléments */
+}
+.exposition-info {
+    padding: 10px;
+    font-size: 0.9em;           /* Réduit la taille du texte */
+}
+
+
+
